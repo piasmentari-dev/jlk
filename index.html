@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mellupi's little world ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wallpaper"></div>
+<div class="grain"></div>
+<div class="petals" id="petals"></div>
+
+<header class="menubar">
+  <div class="menu-left">
+    <span class="apple">✿</span>
+    <b>mellupi</b>
+    <span>beranda</span>
+    <span>koleksi</span>
+    <span>kenangan</span>
+    <span>tentang</span>
+  </div>
+  <div class="menu-right">
+    <span id="weather">☼ 24°C</span>
+    <span>◖ ▰</span>
+    <span id="clock">00:00</span>
+  </div>
+</header>
+
+<main class="desktop" id="desktop">
+
+  <button class="tile photo big-photo" data-page="garden">
+    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=700&auto=format&fit=crop" alt="">
+    <span class="photo-caption">a little garden ♡</span>
+  </button>
+
+  <button class="tile quote" data-page="letter">
+    <div class="sticker-border">
+      <span class="stars">☆ ✿ ☆</span>
+      <p>it's okay not to<br> have everything<br> figured out today.</p>
+      <small>there is always<br> tomorrow ♡</small>
+      <span class="doodle">୨୧ ·˚ ༘</span>
+    </div>
+  </button>
+
+  <button class="tile music" data-page="music">
+    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=300&auto=format&fit=crop" alt="">
+    <span class="music-play">♫</span>
+    <div><b>little things</b><small>songs for a soft heart</small></div>
+  </button>
+
+  <button class="tile flowers" data-page="garden">
+    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=400&auto=format&fit=crop" alt="">
+  </button>
+
+  <button class="tile profile" data-page="profile">
+    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=300&auto=format&fit=crop" alt="">
+    <div class="profile-info">
+      <b>little diary</b>
+      <span>♡ 4 weeks of growing</span>
+      <p>♪ 1.701 little dreams</p>
+      <p>♡ 580 happy moments</p>
+      <p>✿ 283 things to love</p>
+      <p>☁ 379 tiny wishes</p>
+    </div>
+  </button>
+
+  <button class="tile calendar" data-page="calendar">
+    <div class="calendar-head">
+      <span id="prevMonth">‹</span>
+      <b id="monthName">oktober 2026</b>
+      <span id="nextMonth">›</span>
+    </div>
+    <div class="weekdays">
+      <span>m</span><span>s</span><span>s</span><span>r</span><span>k</span><span>j</span><span>s</span>
+    </div>
+    <div id="calendarGrid" class="calendar-grid"></div>
+    <div class="calendar-note">✿ every day is a new page</div>
+  </button>
+
+  <button class="tile photo landscape" data-page="memories">
+    <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=650&auto=format&fit=crop" alt="">
+    <span class="photo-caption">somewhere in my dreams</span>
+  </button>
+
+  <button class="tile flower-card" data-page="garden">
+    <span>🌷</span><span>🌼</span><span>🌱</span>
+    <small>for you, always</small>
+  </button>
+
+  <button class="tile battery" data-page="selfcare">
+    <div class="battery-icon">♡</div>
+    <strong id="batteryPercent">58%</strong>
+    <small>energy for today</small>
+    <div class="battery-bar"><i></i></div>
+  </button>
+
+  <button class="tile photo meadow" data-page="memories">
+    <img src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?w=700&auto=format&fit=crop" alt="">
+    <span class="photo-caption">a place to breathe</span>
+  </button>
+
+  <button class="tile mini-app archive" data-page="archive">
+    <span>🌼</span><small>arsip kenangan</small>
+  </button>
+
+  <button class="tile mini-app notes" data-page="notes">
+    <span>▤</span><small>catatan kecil</small>
+  </button>
+
+  <button class="tile mini-app school" data-page="school">
+    <span>📚</span><small>ruang belajar</small>
+  </button>
+
+  <button class="tile mini-app desktop-app" data-page="desktop">
+    <span>🧸</span><small>teman kecil</small>
+  </button>
+
+  <button class="tile mini-app wishes" data-page="wishes">
+    <span>💌</span><small>kotak harapan</small>
+  </button>
+
+  <button class="tile mini-app diary" data-page="diary">
+    <span>📔</span><small>buku harian</small>
+  </button>
+
+  <button class="tile mini-app love" data-page="love">
+    <span>♡</span><small>hal-hal baik</small>
+  </button>
+
+  <div class="desktop-date">
+    <span id="bigDay">20</span>
+    <div><b id="bigMonth">OKTOBER</b><small id="bigYear">2026</small></div>
+  </div>
+
+  <div class="floating-heart">♡</div>
+  <div class="floating-star">✳</div>
+
+</main>
+
+<div class="window-layer" id="windowLayer"></div>
+
+<footer class="dock-wrap">
+  <div class="dock" id="dock">
+    <button data-page="home" title="beranda">⌂</button>
+    <button data-page="garden" title="taman">✿</button>
+    <button data-page="diary" title="buku harian">▤</button>
+    <button data-page="notes" title="catatan">✎</button>
+    <button data-page="music" title="musik">♫</button>
+    <button data-page="memories" title="kenangan">▧</button>
+    <button data-page="wishes" title="harapan">♡</button>
+    <button data-page="selfcare" title="merawat diri">☁</button>
+    <button data-page="letter" title="surat">✉</button>
+    <button data-page="settings" title="pengaturan">⚙</button>
+    <span class="dock-divider"></span>
+    <button data-page="profile" title="profil">☻</button>
+    <button data-page="archive" title="arsip">▣</button>
+    <button data-page="school" title="belajar">▥</button>
+    <button data-page="love" title="hal baik">♡</button>
+  </div>
+  <span class="dock-label">made with a little bit of love ♡</span>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
